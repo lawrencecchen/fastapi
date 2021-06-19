@@ -11,3 +11,7 @@ async def root():
 @app.get("/hello/{name}")
 async def hello(name: str):
     return {"message": f"Hello, {name}!"}
+
+@app.get("/lol/{name}")
+async def lol(name: str):
+    return {"biglol": name}
